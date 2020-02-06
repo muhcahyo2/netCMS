@@ -17,7 +17,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Category', name: 'category', widget: 'relation', multiple: true, collection: 'category', searchFields:  ['title','slug'], valueField: 'title' }
+      - { label: 'Category', name: 'category', widget: 'relation', multiple: true, collection: 'category', searchFields:  ['judul','slug'], valueField: 'judul', required: false }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
@@ -30,6 +30,6 @@ collections:
     editor: 
       preview: true
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Judul', name: 'judul', widget: 'string' }
       - { label: 'Slug', name: 'slug', widget: 'string' }
       
