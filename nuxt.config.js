@@ -43,7 +43,11 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/markdownit'
   ],
+  markdownit: {
+    injected: true
+  },
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
@@ -74,5 +78,9 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  server: {
+    host: 'localhost',
+    port: 8000
   }
 }
